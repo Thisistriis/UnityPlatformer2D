@@ -29,6 +29,7 @@ public class PlayerControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Animator = gameObject.GetComponent<Animator>();
+        Debug.Log("Holaa");
         
     }
 
