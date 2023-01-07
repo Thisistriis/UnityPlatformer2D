@@ -24,8 +24,8 @@ TagManager:
   - Enemy
   - Bullet
   - Door
-  - 
-  - 
+  - Water
+  - BackGround
   - 
   - 
   - 
@@ -45,6 +45,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 2823928983
+    locked: 0
+  - name: BackGround
+    uniqueID: 1205834913
+    locked: 0
+  - name: Water
+    uniqueID: 221431117
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
