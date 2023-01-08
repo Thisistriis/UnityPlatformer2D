@@ -33,4 +33,5 @@ public class MovementPlatform : MonoBehaviour
             currentPoint = 0;
         }
     }
+  
 }

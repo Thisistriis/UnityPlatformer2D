@@ -51,6 +51,7 @@ public class PlayerControl : MonoBehaviour
             GameObject newBullet = Instantiate(bullet, shootParent.GetChild(0).position, shootParent.GetChild(0).rotation);
             Destroy(newBullet, 3f);
             Animator.SetTrigger("Shoot");
+            AudioManager.instance.Play("Shoot");
         }
         isGrounded = Physics2D.OverlapArea(groundPoints[0].position, groundPoints[1].position, groundMask);
         
@@ -67,6 +68,7 @@ public class PlayerControl : MonoBehaviour
                 rb.AddForce(Vector2.up * jumpForce);
                 currentJumps++;
                 Animator.SetTrigger("Jump");
+                AudioManager.instance.Play("Jump");
             }
         }
         else
@@ -87,18 +89,21 @@ public class PlayerControl : MonoBehaviour
                 //rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(Vector2.right * dashForce);
                 Animator.SetTrigger("Dash");
+                AudioManager.instance.Play("Dash");
             }
             if (rb.velocity.x < 0.0f)
             {
                 //rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(Vector2.left * dashForce);
                 Animator.SetTrigger("Dash");
+                AudioManager.instance.Play("Dash");
             }
         }
 
         if(Input.GetKeyDown(KeyCode.N))
         {
             Animator.SetTrigger("Dead");
+            AudioManager.instance.Play("DeadPlayer");
         }
        
     }
@@ -107,17 +112,20 @@ public class PlayerControl : MonoBehaviour
         if (collision.tag == "MovePlt")
         {
             transform.SetParent(collision.transform);
+
         }
         if (collision.tag == "Coin")
         {
             Destroy(collision.gameObject);
             ScoreControl.SetScore(1);
+            AudioManager.instance.Play("Coin");
         }
         if (collision.tag == "GetDmg")
         {
            Animator.SetTrigger("Hurt");
+            AudioManager.instance.Play("Hurt");
         }
-       
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -137,5 +145,6 @@ public class PlayerControl : MonoBehaviour
     public void DeathAnimationController()
     {
         Animator.SetTrigger("Dead");
+        AudioManager.instance.Play("DeadPlayer");
     }
 }

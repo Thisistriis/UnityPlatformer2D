@@ -24,6 +24,7 @@ public class LifeController : MonoBehaviour
         if (life<=0)
         {
             action.Invoke();
+            AudioManager.instance.Play("Hurt");
         }
     }
     public void DestroyObject(GameObject obj)
