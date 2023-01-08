@@ -129,7 +129,7 @@ public class PlayerControl : MonoBehaviour
 
     public void DeathMushie()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 
     
