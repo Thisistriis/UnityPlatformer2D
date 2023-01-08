@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class SettingsMenu : MonoBehaviour
 {
 
-    public void Return()
+    public AudioMixer audioMixer;
+    
+    public void SetVolume (float volume)
     {
-        SceneManager.LoadScene(1);
+        audioMixer.SetFloat("volume", volume);
     }
+
 }
