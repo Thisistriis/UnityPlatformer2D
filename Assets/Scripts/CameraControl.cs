@@ -30,6 +30,7 @@ public class CameraControl : MonoBehaviour
     {
         Vector3 finalpos = (Vector2)target.position + offset;
         finalpos.z = -10;
+     
        
 
 
