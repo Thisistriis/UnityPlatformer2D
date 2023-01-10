@@ -143,12 +143,12 @@ public class PlayerControl : MonoBehaviour
 
     public void DeathMushie()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void Diamond()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
 
