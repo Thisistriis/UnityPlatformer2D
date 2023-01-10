@@ -3969,7 +3969,7 @@ GameObject:
   - component: {fileID: 688387198}
   - component: {fileID: 688387197}
   m_Layer: 5
-  m_Name: Score
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3983,16 +3983,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688387195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.21435975}
-  m_LocalScale: {x: 0.91270524, y: 0.96112454, z: 1.485}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1285753615}
-  m_RootOrder: 14
+  m_Father: {fileID: 1769341451}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113.8, y: 395.41144}
+  m_AnchoredPosition: {x: -243.3557, y: 189.03496}
   m_SizeDelta: {x: 200, y: 39.7798}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &688387197
@@ -29519,7 +29519,7 @@ GameObject:
   - component: {fileID: 1167525007}
   - component: {fileID: 1167525006}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CoinScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29538,7 +29538,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1769341451}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31015,8 +31015,6 @@ Transform:
   - {fileID: 1347642130}
   - {fileID: 1507689740}
   - {fileID: 511221907}
-  - {fileID: 1996014355}
-  - {fileID: 688387196}
   m_Father: {fileID: 1769341451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32979,7 +32977,7 @@ GameObject:
   - component: {fileID: 1531690573}
   - component: {fileID: 1531690572}
   m_Layer: 5
-  m_Name: Image
+  m_Name: LifeScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32998,7 +32996,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1769341451}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34227,6 +34225,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1285753615}
+  - {fileID: 1996014355}
+  - {fileID: 688387196}
   - {fileID: 1167525005}
   - {fileID: 1531690571}
   m_Father: {fileID: 0}
@@ -35516,7 +35516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936166167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.27, y: 0.12, z: -0.0533}
+  m_LocalPosition: {x: -30.4, y: -4.09, z: -0.0533}
   m_LocalScale: {x: 1.5378636, y: 1.5378636, z: 1.5378636}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35828,7 +35828,7 @@ GameObject:
   - component: {fileID: 1996014357}
   - component: {fileID: 1996014356}
   m_Layer: 5
-  m_Name: Life
+  m_Name: LifeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35842,16 +35842,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996014354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.21435975}
-  m_LocalScale: {x: 0.91270524, y: 0.96112454, z: 1.485}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1285753615}
-  m_RootOrder: 13
+  m_Father: {fileID: 1769341451}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101.5, y: 361.7}
+  m_AnchoredPosition: {x: -256.83218, y: 153.95999}
   m_SizeDelta: {x: 161.1362, y: 37.9762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996014356
