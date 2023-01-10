@@ -15,7 +15,7 @@ public class LifeController : MonoBehaviour
     public GameObject Mushie;
     private void Update()
     {
-        lifetext.text = "Life: " + life;
+        lifetext.text = " " + life;
         
     }
     public void SetDamage(int damage)

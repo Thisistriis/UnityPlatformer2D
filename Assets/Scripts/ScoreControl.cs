@@ -9,7 +9,7 @@ public class ScoreControl : MonoBehaviour
     static public int score;
     private void Update()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = " " + score;
     }
     static public void SetScore(int points)
     {

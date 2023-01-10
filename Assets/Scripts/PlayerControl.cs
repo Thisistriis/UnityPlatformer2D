@@ -124,6 +124,7 @@ public class PlayerControl : MonoBehaviour
             Destroy(collision.gameObject);
             
             AudioManager.instance.Play("Diamond");
+            Diamond();
         }
         if (collision.tag == "GetDmg")
         {
@@ -147,7 +148,7 @@ public class PlayerControl : MonoBehaviour
 
     public void Diamond()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
 
