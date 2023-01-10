@@ -29,7 +29,6 @@ public class PlayerControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Animator = gameObject.GetComponent<Animator>();
-        Debug.Log("Test");
         
     }
 
@@ -120,6 +119,12 @@ public class PlayerControl : MonoBehaviour
             ScoreControl.SetScore(1);
             AudioManager.instance.Play("Coin");
         }
+        if (collision.tag == "Diamond")
+        {
+            Destroy(collision.gameObject);
+            
+            AudioManager.instance.Play("Diamond");
+        }
         if (collision.tag == "GetDmg")
         {
            Animator.SetTrigger("Hurt");
@@ -140,7 +145,11 @@ public class PlayerControl : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    
+    public void Diamond()
+    {
+        SceneManager.LoadScene(4);
+    }
+
 
     public void DeathAnimationController()
     {
