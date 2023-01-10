@@ -30,22 +30,7 @@ public class CameraControl : MonoBehaviour
     {
         Vector3 finalpos = (Vector2)target.position + offset;
         finalpos.z = -10;
-        if (finalpos.x < limitX[0].position.x)
-        {
-            finalpos.x = limitX[0].position.x;
-        }
-        if (finalpos.y < limitY[0].position.y)
-        {
-            finalpos.y = limitY[0].position.y;
-        }
-        if (finalpos.x > limitX[1].position.x)
-        {
-            finalpos.x = limitX[1].position.x;
-        }
-        if (finalpos.y > limitY[1].position.y)
-        {
-            finalpos.y = limitY[1].position.y;
-        }
+       
 
 
 
