@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEditor.SearchService;
 using System.Runtime.InteropServices.WindowsRuntime;
 
 public class LifeController : MonoBehaviour
@@ -15,7 +14,7 @@ public class LifeController : MonoBehaviour
     public GameObject Mushie;
     private void Update()
     {
-        lifetext.text = " " + life;
+        lifetext.text = "" + life;
         
     }
     public void SetDamage(int damage)
